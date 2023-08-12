@@ -28,7 +28,7 @@ namespace locationapi
 		/// <summary>
 		/// Sets or returns the connection string use by all instances of this class.
 		/// </summary>
-		public static string ConnectionString { get; set; }
+		//public static string ConnectionString { get; }
 
 		/// <summary>
 		/// Returns the current SqlTransaction object or null if no transaction
@@ -41,7 +41,7 @@ namespace locationapi
 		/// </summary>
 		public AdoHelper()
 		{
-			_connString = ConnectionString;
+			_connString = "Server=zartbit.database.windows.net;Database=zbGPS; user id=denis;password=nessD1zbsql;";
 			Connect();
 		}
 

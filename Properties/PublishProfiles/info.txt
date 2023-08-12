@@ -1,0 +1,5 @@
+NOTAS:
+
+1.
+Estos son los archivos que toma en cuenta la WebAPI para hacer el Publish, principalmente la contraseña que se descarga de Azure y se almacena en el archivo: zbapp01.PublishSettings ( ver con Bloc de Notas )
+
