@@ -9,28 +9,29 @@ using Microsoft.AspNetCore.Authorization;
 namespace locationapi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("[controller]")]    
     public class DeviceController : ControllerBase
     {
-        [HttpGet(Name = "GetDevice")]
+        [HttpGet]
+        [Route("{id}")]
         [Authorize]
         public Device Get(int ID)
-        {            
+        {
             Device device;
 
             AdoHelper ado = new AdoHelper("Server=zartbit.database.windows.net;Database=zbGPS; user id=denis;password=nessD1zbsql;");
-            DataRow drDevice = ado.ExecDataSet("SELECT * FROM device where id=@id","@id", ID).Tables[0].Rows[0];
-           
-                device = new Device();
-                device.ID = (int)drDevice["id"];
-                device.IMEI = drDevice["imei"].ToString();
-                device.CustomerID = drDevice["customer_id"].ToString();
-                device.IsActive = (bool)drDevice["is_active"];
-                device.IsHistoryActive = (bool)drDevice["is_history_active"];
+            DataRow drDevice = ado.ExecDataSet("SELECT * FROM device where id=@id", "@id", ID).Tables[0].Rows[0];
 
-                // Agregado para dibujar circulo de área definida en la Aplicación de .NET MAUI.
-                device.LatitudActual = drDevice["LatitudActual"].ToString();
-                device.LongitudActual = drDevice["LongitudActual"].ToString();
+            device = new Device();
+            device.ID = (int)drDevice["id"];
+            device.IMEI = drDevice["imei"].ToString();
+            device.CustomerID = drDevice["customer_id"].ToString();
+            device.IsActive = (bool)drDevice["is_active"];
+            device.IsHistoryActive = (bool)drDevice["is_history_active"];
+
+            // Agregado para dibujar circulo de área definida en la Aplicación de .NET MAUI.
+            device.LatitudActual = drDevice["LatitudActual"].ToString();
+            device.LongitudActual = drDevice["LongitudActual"].ToString();
 
             return device;
         }

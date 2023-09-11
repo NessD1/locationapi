@@ -6,9 +6,6 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project>
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAV5UaN/JV2k+GEIRyt4aWWAAAAAACAAAAAAAQZgAAAAEAACAAAABSMkxotytnw3XRLUQCpeCMb80axwjclOMwv4u3jejo5wAAAAAOgAAAAAIAACAAAABdXrWi9KFcI36fP2/XF2662A1hyowbrXdsHSUdTW68uoAAAABsDG1JzkETU46GxuhF68YeIr+gb6f3udtNufwSN1uJ5Uq23DF4hSgSclf86Icp2rXI+lokYMtR0EQliveOS6MFQZtGTkb7lei0koubzvIYjjtj38+pUfQaZntpHHk7RVMONhGGvwDqy7y+5J2JvlW/Fpx6WMk4d4h/aAzvd5IVAEAAAABsFlDdThrW3q98TpYd04EQwxWFjpHDjEo4iMug/iIswVg0uNy0/6A/sirNuyBFAqefIKzFfvs2Q/w90h1DDKc3</EncryptedPassword>
-    <_PublishTargetUrl>ftps://waws-prod-bay-205.ftp.azurewebsites.windows.net/site/wwwroot</_PublishTargetUrl>
-    <History>False|2023-04-29T01:15:01.0326984Z;False|2023-04-28T18:14:25.9308097-07:00;False|2023-04-28T18:12:39.5428785-07:00;False|2023-04-28T18:12:12.6381027-07:00;False|2023-04-28T18:09:57.8526015-07:00;False|2023-04-28T18:05:20.8578596-07:00;</History>
-    <LastFailureDetails />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwHBibF59cUSSgOVO6kYzcQAAAAACAAAAAAAQZgAAAAEAACAAAADwMKnSx0qYvcbAJZtQnQTOJ4XhvaES5DRF1ozPIupNqQAAAAAOgAAAAAIAACAAAAC1cRW5ZQrAXAVKTc23PYDO084XRJTw3QOEzb9ukTJCe4AAAACW+GRU1yd6NJvQYzIYMmYbQbFY4VrOIgvnmkW7v3gP2SfkxE9bfAzYFGnSOdlcb7s2sa42xPRQ5SEgHrX05rh3dUv9LlNO+grcM6WP5iHNrh3pBftPWE7e8yw+mPBRGwr4A3GTXAhUnvZSIkH+qD218dpyot7Z1HRaAnPoifn9j0AAAAC576jqONv6MxA+2zej5sKsAuGLbUAcUExtKYhqvdk3Yw/9rRpspMklF/bm9pi7ImQIitBW9yxE9lAEn4Dkyr7T</EncryptedPassword>
   </PropertyGroup>
 </Project>

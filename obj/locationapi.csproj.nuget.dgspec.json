@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Git\\locationapi\\locationapi.csproj": {}
+    "C:\\Git\\locationapi_v02\\locationapi.csproj": {}
   },
   "projects": {
-    "C:\\Git\\locationapi\\locationapi.csproj": {
+    "C:\\Git\\locationapi_v02\\locationapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Git\\locationapi\\locationapi.csproj",
+        "projectUniqueName": "C:\\Git\\locationapi_v02\\locationapi.csproj",
         "projectName": "locationapi",
-        "projectPath": "C:\\Git\\locationapi\\locationapi.csproj",
+        "projectPath": "C:\\Git\\locationapi_v02\\locationapi.csproj",
         "packagesPath": "C:\\Users\\zartb\\.nuget\\packages\\",
-        "outputPath": "C:\\Git\\locationapi\\obj\\",
+        "outputPath": "C:\\Git\\locationapi_v02\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -22,7 +22,7 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -30,8 +30,8 @@
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -42,34 +42,30 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "IdentityModel": {
               "target": "Package",
               "version": "[6.1.0, )"
             },
-            "IdentityServer4": {
-              "target": "Package",
-              "version": "[4.1.2, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.18, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
-              "version": "[5.1.0-preview2.22314.2, )"
+              "version": "[5.1.1, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.9, )"
+              "version": "[7.0.10, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -77,7 +73,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[6.5.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

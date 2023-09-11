@@ -17,8 +17,7 @@ namespace locationapi.Controllers
             _userService = userService;
         }
 
-        [HttpPost("login")]
-        [Authorize]
+        [HttpPost("login")]        
         public IActionResult Autentificar([FromBody] AuthRequest model)
         {
             Respuesta respuesta = new Respuesta();
@@ -30,7 +29,7 @@ namespace locationapi.Controllers
                };
 
             respuesta.Exito = 1;
-            respuesta.Data = userresponse;
+            respuesta.Datos = userresponse;
             return Ok(respuesta);
         }
     }

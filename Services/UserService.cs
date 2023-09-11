@@ -23,12 +23,12 @@ namespace locationapi.Services
             UserResponse userResponse = new UserResponse();
             using (var db = new ZbGpsContext())
             {
-                var usuario = db.Usuarios.Where(d=>d.NombreDeUsuario == model.Username
-                && d.Contraseña == model.Password).FirstOrDefault();
+                var usuario = db.Usuarios.Where(d=>d.NombreDeUsuario == model.NombreDeUsuario
+                && d.Contraseña == model.Contraseña).FirstOrDefault();
 
                 if (usuario == null) return null;
-
-                userResponse.Username =usuario.NombreDeUsuario;
+                userResponse.ID = usuario.Id.ToString();
+                userResponse.NombreDeUsuario =usuario.NombreDeUsuario;
                 userResponse.Token = GetToken(usuario);
             }
             return userResponse;
@@ -43,8 +43,8 @@ namespace locationapi.Services
                 Subject = new System.Security.Claims.ClaimsIdentity(
                     new Claim[]
                     {
-                        new Claim(ClaimTypes.NameIdentifier,usuario.Id.ToString()),
-                        new Claim(ClaimTypes.Name,usuario.Nombre.ToString()),
+                        new Claim("ID",usuario.Id.ToString()),
+                        new Claim("NombreDeUsuario",usuario.Nombre.ToString()),
                         new Claim("rol",usuario.Rol)
                     }),
                 Expires = DateTime.UtcNow.AddDays(60),

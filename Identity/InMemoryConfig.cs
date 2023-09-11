@@ -1,7 +1,4 @@
 ﻿using IdentityModel;
-using IdentityServer4;
-using IdentityServer4.Models;
-using IdentityServer4.Stores;
 using System.Data;
 using System.Security.Claims;
 
@@ -9,12 +6,6 @@ namespace locationapi.Identity
 {
     public static class InMemoryConfig
     {
-        public static IEnumerable<IdentityResource> GetIdentityResources() =>
-          new List<IdentityResource>
-          {
-            new IdentityResources.OpenId(),
-            new IdentityResources.Profile()            
-          };
 
         public static List<User> GetUsers()         
         {
@@ -40,21 +31,6 @@ namespace locationapi.Identity
             }              
               return usuarios;
         }
-
-        public static IEnumerable<Client> GetClients() =>
-        new List<Client>
-        {
-           new Client
-           {
-                ClientId = "zartbit",
-                ClientSecrets = new [] { new Secret("zbNessd1Lstryke".ToSha256()) },
-                AllowedGrantTypes = GrantTypes.ResourceOwnerPasswordAndClientCredentials,
-                AllowedScopes = { 
-                    IdentityServerConstants.StandardScopes.OpenId,
-                    IdentityServerConstants.StandardScopes.Profile                    
-               },                
-            }
-        };
 
     }
 }
